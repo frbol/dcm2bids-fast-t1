@@ -1,0 +1,29 @@
+[project]
+name = "dcm2bids-fast-t1"
+version = "1.0.0"
+description = "Fast DICOM→NIfTI converter that selects the best T1 (and optional FLAIR) using pydicom + dcm2niix."
+readme = "README.md"
+authors = [{ name = "Frédéric Loboda" }]
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+dependencies = [
+  "pydicom>=2.3"
+]
+
+# CLI entry point: after renaming your script to dcm2bids_fast_t1.py
+# and exposing a main() function inside it, users can run `dcm2bids-fast-t1`.
+[project.scripts]
+dcm2bids-fast-t1 = "dcm2bids_fast_t1:main"
+
+[project.urls]
+Homepage = "https://github.com/frbol/dcm2bids-fast-t1"
+Repository = "https://github.com/frbol/dcm2bids-fast-t1"
+Issues = "https://github.com/frbol/dcm2bids-fast-t1/issues"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# Tell setuptools we're shipping a single-module package.
+[tool.setuptools]
+py-modules = ["dcm2bids_fast_t1"]
