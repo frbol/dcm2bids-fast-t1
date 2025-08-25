@@ -1,8 +1,8 @@
 # dcm2bids-fast-t1
 Fast DICOM → NIfTI converter for neuroimaging, selects best T1 (and optional FLAIR).
-# dcm2bids_fast_t1
 
-A **minimal and fast** Python wrapper for [dcm2niix](https://github.com/rordenlab/dcm2niix) that automatically selects and converts **the single best T1-weighted MRI** (and optionally the best FLAIR) from a DICOM folder into NIfTI format.  
+
+ **minimal and fast** Python wrapper for [dcm2niix](https://github.com/rordenlab/dcm2niix) that automatically selects and converts **the single best T1-weighted MRI** (and optionally the best FLAIR) from a DICOM folder into NIfTI format.  
 It scans DICOM headers quickly with [pydicom](https://github.com/pydicom/pydicom), finds the most relevant series, and calls `dcm2niix` only on that subset.
 
 ## Features
