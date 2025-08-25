@@ -17,4 +17,6 @@ preferred-citation:
       given-names: "Frédéric"
   title: "dcm2bids_fast_t1: A lightweight DICOM→NIfTI converter for T1/FLAIR MRI"
   year: 2025
-  url: "https://github.com/frbol/dcm2bids-fast-t1"
+doi: "10.5281/zenodo.16941366"
+url: "https://doi.org/10.5281/zenodo.16941366"
+
