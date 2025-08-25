@@ -49,16 +49,15 @@ python dcm2bids_fast_t1.py -i /path/to/DICOM/folder -o /path/to/output -s SUBJEC
 
 ## Requirements
 
-- [dcm2niix](https://github.com/rordenlab/dcm2niix) in your PATH  
-  - macOS: `brew install dcm2niix`  
-  - conda: `conda install -c conda-forge dcm2niix`  
-- [pydicom](https://pydicom.github.io/) for header scanning
+# core tool needed at system level
+# macOS (Homebrew)
+brew install dcm2niix
+# or conda
+conda install -c conda-forge dcm2niix
 
-Install via pip:
+# python deps
+pip install -r requirements.txt
 
-```bash
-pip install pydicom
-```
 
 ## Usage
 
