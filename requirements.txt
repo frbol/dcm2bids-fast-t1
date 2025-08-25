@@ -3,3 +3,8 @@ numpy>=1.23
 nibabel>=5.0
 click>=8.1
 rich>=13.0
+
+dcm2niix in your PATH
+macOS: brew install dcm2niix
+conda: conda install -c conda-forge dcm2niix
+pydicom for header scanning
