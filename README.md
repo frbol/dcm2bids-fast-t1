@@ -16,7 +16,8 @@ It scans DICOM headers quickly with [pydicom](https://github.com/pydicom/pydicom
 If you use this software in your research or publications, please cite:
 
 **APA Style:**
-> Loboda, F. (2025). *dcm2bids_fast_t1: A lightweight DICOM→NIfTI converter for T1/FLAIR MRI* [Computer software]. GitHub. https://github.com/YOUR_USERNAME/dcm2bids_fast_t1  
+> Loboda, F. (2025). *dcm2bids_fast_t1: A lightweight DICOM→NIfTI converter for T1/FLAIR MRI* [Computer software]. GitHub. https://github.com/YOUR_USERNAME/dcm2bids_fast_t1
+> 
 
 **BibTeX:**
 ```bibtex
