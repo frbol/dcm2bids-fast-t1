@@ -18,3 +18,74 @@ It scans DICOM headers quickly with [pydicom](https://github.com/pydicom/pydicom
 - Python packages:
   ```bash
   pip install pydicom
+
+# dcm2bids_fast_t1
+
+A **fast DICOM → NIfTI converter** that selects and converts **only the best T1-weighted MRI series** (and optionally the best FLAIR) into a clean, BIDS-like folder structure.  
+This script avoids dumping dozens of redundant files by pre-scanning DICOM headers before running `dcm2niix`.
+
+## Quickstart
+
+```bash
+python dcm2bids_fast_t1.py -i /path/to/DICOM/folder -o /path/to/output -s SUBJECT_ID
+```
+
+Optional: also convert the best FLAIR series
+
+```bash
+python dcm2bids_fast_t1.py -i /path/to/DICOM/folder -o /path/to/output -s SUBJECT_ID --with-flair
+```
+
+## Requirements
+
+- [dcm2niix](https://github.com/rordenlab/dcm2niix) in your PATH  
+  - macOS: `brew install dcm2niix`  
+  - conda: `conda install -c conda-forge dcm2niix`  
+- [pydicom](https://pydicom.github.io/) for header scanning
+
+Install via pip:
+
+```bash
+pip install pydicom
+```
+
+## Usage
+
+```bash
+usage: dcm2bids_fast_t1.py [-h] [-i INPUT] [-o BIDS_ROOT] [-s SUBJECT]
+                           [--session SESSION] [--with-flair] [--timeout TIMEOUT]
+                           [--no-gzip] [--no-json] [--list]
+
+FAST: convert only the best T1 (and optional FLAIR) series from a DICOM folder.
+
+optional arguments:
+  -h, --help            Show this help message and exit
+  -i, --input           Input DICOM folder (recursive)
+  -o, --bids-root       Output root folder
+  -s, --subject         Subject label (e.g. 244S03_T3)
+  --session             Session label (optional)
+  --with-flair          Also convert the best FLAIR series
+  --timeout             Timeout for dcm2niix (0 = no limit)
+  --no-gzip             Write `.nii` instead of `.nii.gz`
+  --no-json             Skip JSON sidecars
+  --list                Only list candidate series without converting
+```
+
+## Examples
+
+Convert one subject, keep only the best T1:
+
+```bash
+python dcm2bids_fast_t1.py -i ~/dicoms/244S03_T3 -o ~/BIDS_Project -s 244S03_T3
+```
+
+Convert and also include best FLAIR:
+
+```bash
+python dcm2bids_fast_t1.py -i ~/dicoms/244S03_T3 -o ~/BIDS_Project -s 244S03_T3 --with-flair
+```
+
+List all candidate series before deciding:
+
+```bash
+python dcm2bids_fast_t1.py -i ~/dicoms/244S03_T3 --list
