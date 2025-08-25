@@ -1,8 +1,33 @@
-# core tool needed at system level
-# macOS (Homebrew)
-brew install dcm2niix
-# or conda
-conda install -c conda-forge dcm2niix
+pydicom>=2.3
+numpy>=1.23
+nibabel>=5.0
+click>=8.1
+rich>=13.0
+``)
 
-# python deps
-pip install -r requirements.txt
+### ✅ Usage (clarified + closed code fence)
+```bash
+usage: dcm2bids_fast_t1.py [-h]
+                           [-i <INPUT_DICOM_DIR>]
+                           [-o <OUTPUT_DIR>]
+                           [-s <SUBJECT_LABEL>]
+                           [--session <SESSION_LABEL>]
+                           [--with-flair]
+                           [--timeout <SECONDS>]
+                           [--no-gzip]
+                           [--no-json]
+                           [--list]
+
+FAST: convert only the best T1 (and optional FLAIR) series from a DICOM folder.
+
+optional arguments:
+  -h, --help                 Show this help message and exit
+  -i, --input                Input DICOM directory (recursive)
+  -o, --bids-root            Output root directory
+  -s, --subject              Subject label (e.g., 244S03_T3)
+  --session                  Session label (optional)
+  --with-flair               Also convert the best FLAIR series
+  --timeout                  Timeout for dcm2niix in seconds (0 = no limit)
+  --no-gzip                  Write .nii instead of .nii.gz
+  --no-json                  Skip JSON sidecars
+  --list                     Only list candidate series; do not convert
