@@ -5,9 +5,10 @@ type: software
 authors:
   - family-names: "Loboda"
     given-names: "Frédéric"
+    orcid: "https://orcid.org/0009-0003-9749-6670"
 repository-code: "https://github.com/frbol/dcm2bids-fast-t1"
 license: "MIT"
-version: "1.0.0"
+version: "v1.0.0"
 date-released: "2025-08-25"
 
 preferred-citation:
@@ -15,8 +16,10 @@ preferred-citation:
   authors:
     - family-names: "Loboda"
       given-names: "Frédéric"
-  title: "dcm2bids_fast_t1: A lightweight DICOM→NIfTI converter for T1/FLAIR MRI"
+      orcid: "https://orcid.org/0009-0003-9749-6670"
+  title: "dcm2bids-fast-t1: A lightweight DICOM→NIfTI converter for T1/FLAIR MRI"
+  version: "v1.0.0"
   year: 2025
-doi: "10.5281/zenodo.16941366"
-url: "https://doi.org/10.5281/zenodo.16941366"
+  doi: "10.5281/zenodo.16941366"
+  url: "https://doi.org/10.5281/zenodo.16941366"
 
