@@ -18,19 +18,19 @@ It scans DICOM headers quickly with [pydicom](https://github.com/pydicom/pydicom
 If you use this software in your research or publications, please cite:
 
 **APA Style:**
-> Loboda, F. (2025). dcm2bids-fast-t1 v1.0.0 – Minimal DICOM→NIfTI converter for T1/FLAIR MRI (Version 1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.16941366
+> Loboda, F. (2025). dcm2bids-fast-t1 (Version 1.0.1) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.16941366
 > 
 
 **BibTeX:**
 ```bibtex
 @software{Loboda2025_dcm2bids_fast_t1,
-  author       = {Frédéric Loboda},
-  title        = {dcm2bids_fast_t1: A lightweight DICOM→NIfTI converter for T1/FLAIR MRI},
-  year         = {2025},
-  publisher    = {Zenodo},
-  version      = {1.0.0},
-  doi          = {10.5281/zenodo.16941366},
-  url          = {https://doi.org/10.5281/zenodo.16941366}
+  author    = {Fr{\'e}d{\'e}ric Loboda},
+  title     = {dcm2bids-fast-t1: A lightweight DICOM{\textrightarrow}NIfTI converter for T1/FLAIR MRI},
+  year      = {2025},
+  publisher = {Zenodo},
+  version   = {1.0.1},
+  doi       = {10.5281/zenodo.16941366},
+  url       = {https://doi.org/10.5281/zenodo.16941366}
 }
 ```
 
