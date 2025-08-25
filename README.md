@@ -28,8 +28,7 @@ If you use this software in your research or publications, please cite:
   publisher    = {GitHub},
   url          = {https://github.com/YOUR_USERNAME/dcm2bids_fast_t1},
   version      = {1.0.0}
-
-
+```
 
 
 ## Requirements
