@@ -49,15 +49,12 @@ python dcm2bids_fast_t1.py -i /path/to/DICOM/folder -o /path/to/output -s SUBJEC
 
 ## Requirements
 
-# core tool needed at system level
-# macOS (Homebrew)
-brew install dcm2niix
-# or conda
-conda install -c conda-forge dcm2niix
+## Requirements
 
-# python deps
-pip install -r requirements.txt
-
+- [dcm2niix](https://github.com/rordenlab/dcm2niix) must be in your PATH  
+- Python packages can be installed with:  
+  ```bash
+  pip install -r requirements.txt
 
 ## Usage
 
