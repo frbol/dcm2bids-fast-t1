@@ -9,8 +9,24 @@ It scans DICOM headers quickly with [pydicom](https://github.com/pydicom/pydicom
 - Fast — scans headers instead of running `dcm2niix` on everything  
 - Smart — picks the largest/highest-resolution T1 (and FLAIR if requested)  
 - Simple — saves directly into a clean subject folder, no unnecessary subfolders  
-- Flexible — works with single folders or in batch mode  
+- Flexible — works with single folders or in batch mode
+  
+## Citation
 
+If you use this software in your research or publications, please cite:
+
+**APA Style:**
+> Loboda, F. (2025). *dcm2bids_fast_t1: A lightweight DICOM→NIfTI converter for T1/FLAIR MRI* [Computer software]. GitHub. https://github.com/YOUR_USERNAME/dcm2bids_fast_t1  
+
+**BibTeX:**
+```bibtex
+@software{Loboda2025_dcm2bids_fast_t1,
+  author       = {Frédéric Loboda},
+  title        = {dcm2bids_fast_t1: A lightweight DICOM→NIfTI converter for T1/FLAIR MRI},
+  year         = {2025},
+  publisher    = {GitHub},
+  url          = {https://github.com/YOUR_USERNAME/dcm2bids_fast_t1},
+  version      = {1.0.0}
 ## Requirements
 - [dcm2niix](https://github.com/rordenlab/dcm2niix) in your PATH  
   - macOS: `brew install dcm2niix`  
