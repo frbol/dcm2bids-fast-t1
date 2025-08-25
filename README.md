@@ -26,7 +26,7 @@ If you use this software in your research or publications, please cite:
   title        = {dcm2bids_fast_t1: A lightweight DICOM→NIfTI converter for T1/FLAIR MRI},
   year         = {2025},
   publisher    = {GitHub},
-  url          = {https://github.com/YOUR_USERNAME/dcm2bids_fast_t1},
+  url          = {[https://github.com/frbol/dcm2bids-fast-t1]},
   version      = {1.0.0}
 ```
 
