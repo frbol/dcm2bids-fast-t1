@@ -1,4 +1,5 @@
 # dcm2bids-fast-t1
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16941366.svg)](https://doi.org/10.5281/zenodo.16941366)
 Fast DICOM → NIfTI converter for neuroimaging, selects best T1 (and optional FLAIR).
 
 
@@ -16,7 +17,7 @@ It scans DICOM headers quickly with [pydicom](https://github.com/pydicom/pydicom
 If you use this software in your research or publications, please cite:
 
 **APA Style:**
-> Loboda, F. (2025). *dcm2bids_fast_t1: A lightweight DICOM→NIfTI converter for T1/FLAIR MRI* [Computer software]. GitHub. https://github.com/frbol/dcm2bids_fast_t1
+> Loboda, F. (2025). dcm2bids-fast-t1 v1.0.0 – Minimal DICOM→NIfTI converter for T1/FLAIR MRI (Version 1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.16941366
 > 
 
 **BibTeX:**
@@ -25,9 +26,10 @@ If you use this software in your research or publications, please cite:
   author       = {Frédéric Loboda},
   title        = {dcm2bids_fast_t1: A lightweight DICOM→NIfTI converter for T1/FLAIR MRI},
   year         = {2025},
-  publisher    = {GitHub},
-  url          = {https://github.com/frbol/dcm2bids-fast-t1},
-  version      = {1.0.0}
+  publisher    = {Zenodo},
+  version      = {1.0.0},
+  doi          = {10.5281/zenodo.16941366},
+  url          = {https://doi.org/10.5281/zenodo.16941366}
 }
 ```
 
