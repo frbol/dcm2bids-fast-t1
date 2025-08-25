@@ -31,14 +31,6 @@ If you use this software in your research or publications, please cite:
 ```
 
 
-## Requirements
-- [dcm2niix](https://github.com/rordenlab/dcm2niix) in your PATH  
-  - macOS: `brew install dcm2niix`  
-  - Conda: `conda install -c conda-forge dcm2niix`  
-- Python packages:
-  ```bash
-  pip install pydicom
-
 ## Quickstart
 
 ```bash
