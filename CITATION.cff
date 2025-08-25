@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: dcm2bids-fast-t1
+message: If you use this software, please cite it.
+type: software
+authors:
+  - family-names: Loboda
+    given-names: Frédéric
+repository-code: https://github.com/frbol/dcm2bids-fast-t1
+license: MIT
+version: "1.0.0"
+date-released: "2025-08-25"
+preferred-citation:
+  type: software
+  authors:
+    - family-names: Loboda
+      given-names: Frédéric
+  title: dcm2bids_fast_t1: A lightweight DICOM→NIfTI converter for T1/FLAIR MRI
+  year: 2025
+  url: https://github.com/frbol/dcm2bids-fast-t1
