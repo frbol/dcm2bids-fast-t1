@@ -28,6 +28,10 @@ If you use this software in your research or publications, please cite:
   publisher    = {GitHub},
   url          = {https://github.com/YOUR_USERNAME/dcm2bids_fast_t1},
   version      = {1.0.0}
+
+
+
+
 ## Requirements
 - [dcm2niix](https://github.com/rordenlab/dcm2niix) in your PATH  
   - macOS: `brew install dcm2niix`  
@@ -35,11 +39,6 @@ If you use this software in your research or publications, please cite:
 - Python packages:
   ```bash
   pip install pydicom
-
-# dcm2bids_fast_t1
-
-A **fast DICOM → NIfTI converter** that selects and converts **only the best T1-weighted MRI series** (and optionally the best FLAIR) into a clean, BIDS-like folder structure.  
-This script avoids dumping dozens of redundant files by pre-scanning DICOM headers before running `dcm2niix`.
 
 ## Quickstart
 
